@@ -3,7 +3,7 @@ import {
   UsersIcon, CakeIcon, UserGroupIcon, ClipboardDocumentCheckIcon 
 } from '@heroicons/react/24/outline'
 
-const DashboardOverview: FC = () => {
+const DashboardOverview = () => {
   const stats = [
     { name: 'Total Meals Served', value: '1,234,567', icon: CakeIcon },
     { name: 'Active Branches', value: '42', icon: UsersIcon },

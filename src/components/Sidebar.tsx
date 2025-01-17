@@ -9,7 +9,7 @@ interface SidebarProps {
   setCurrentSection: (section: string) => void
 }
 
-const Sidebar: FC<SidebarProps> = ({ currentSection, setCurrentSection }) => {
+const Sidebar = ({ currentSection, setCurrentSection }: SidebarProps) => {
   const navItems = [
     { name: 'Dashboard Overview', icon: ChartPieIcon },
     { name: 'User Management', icon: UsersIcon },
@@ -46,4 +46,3 @@ const Sidebar: FC<SidebarProps> = ({ currentSection, setCurrentSection }) => {
 }
 
 export default Sidebar
-

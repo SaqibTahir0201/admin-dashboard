@@ -1,7 +1,7 @@
 import React from 'react'
 import { BellIcon, GlobeAltIcon, MagnifyingGlassIcon } from '@heroicons/react/24/outline'
 
-const Header: FC = () => {
+const Header = () => {
   return (
     <header className="bg-white shadow-md py-4 px-6">
       <div className="flex items-center justify-between">

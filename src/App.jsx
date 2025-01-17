@@ -2,6 +2,8 @@ import { useState } from 'react'
 import Sidebar from './components/Sidebar'
 import Header from './components/Header'
 import DashboardOverview from './components/DashboardOverview'
+import UserManagement from './components/UserManagement'
+import MealServingsAndPostHistory from './components/MealServingsAndPostHistory'
 
 function App() {
   const [currentSection, setCurrentSection] = useState('Dashboard Overview')
@@ -14,6 +16,8 @@ function App() {
         <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-100">
           <div className="container mx-auto px-6 py-8">
             {currentSection === 'Dashboard Overview' && <DashboardOverview />}
+            {currentSection === 'User Management' && <UserManagement />}
+            {currentSection === 'Meal Servings & Post History' && <MealServingsAndPostHistory />}
             {/* Add other sections here */}
           </div>
         </main>
